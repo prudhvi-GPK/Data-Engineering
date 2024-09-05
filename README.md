@@ -38,7 +38,6 @@ This script fetches cryptocurrency data from the CoinCap API, performs some tran
 ### Configuration
 Update the `db_params` dictionary in the script with your PostgreSQL connection details:
 
-```python
 db_params = {
  "host": "localhost",
  "database": "your_database_name",
@@ -50,7 +49,7 @@ db_params = {
 - Ensure you have the required libraries installed and PostgreSQL set up.
 - Run the script: python crypto_to_postgres.py
 
-## Features
+### Features
 
 - **Fetches real-time cryptocurrency data**.
 - **Performs ETL operations**:
@@ -60,7 +59,7 @@ db_params = {
   - Uses UPSERT operation to handle existing records.
 - **Includes error handling** for API requests and database operations.
 
-## Data Fields
+### Data Fields
 
 Both scripts handle the following data fields:
 - `id`
@@ -72,12 +71,12 @@ Both scripts handle the following data fields:
 The PostgreSQL script additionally calculates and stores:
 - `performance` (based on price change).
 
-## Error Handling
+### Error Handling
 
 - Both scripts include error handling for API requests.
 - The PostgreSQL script also includes error handling for database operations.
 
-## Maintenance
+### Maintenance
 
 - Regularly check the CoinCap API documentation for any changes to the endpoint or data structure.
 - For the PostgreSQL script, ensure your database is properly maintained and backed up.
